@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D3996DC29637788003B9FF9 /* DemeerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3996DB29637788003B9FF9 /* DemeerApp.swift */; };
+		6D3996E029637789003B9FF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D3996DF29637789003B9FF9 /* Assets.xcassets */; };
+		6D3996E329637789003B9FF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D3996E229637789003B9FF9 /* Preview Assets.xcassets */; };
+		6D3996E529637789003B9FF9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3996E429637789003B9FF9 /* Persistence.swift */; };
+		6D3996E829637789003B9FF9 /* Demeer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D3996E629637789003B9FF9 /* Demeer.xcdatamodeld */; };
+		6D3996F329637789003B9FF9 /* DemeerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3996F229637789003B9FF9 /* DemeerTests.swift */; };
+		6D3996FD29637789003B9FF9 /* DemeerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3996FC29637789003B9FF9 /* DemeerUITests.swift */; };
+		6D3996FF29637789003B9FF9 /* DemeerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3996FE29637789003B9FF9 /* DemeerUITestsLaunchTests.swift */; };
+		6D39972B29637A3E003B9FF9 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39972129637A3E003B9FF9 /* SearchView.swift */; };
+		6D39972C29637A3E003B9FF9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39972229637A3E003B9FF9 /* SettingsView.swift */; };
+		6D39972D29637A3E003B9FF9 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39972329637A3E003B9FF9 /* PostView.swift */; };
+		6D39972E29637A3E003B9FF9 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39972429637A3E003B9FF9 /* GalleryView.swift */; };
+		6D39972F29637A3E003B9FF9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39972529637A3E003B9FF9 /* LoginView.swift */; };
+		6D39973029637A3E003B9FF9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39972629637A3E003B9FF9 /* ProfileView.swift */; };
+		6D39973429637A3E003B9FF9 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39972A29637A3E003B9FF9 /* Network.swift */; };
+		6D5D4B722A5A419B00D76B83 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5D4B712A5A419B00D76B83 /* LoginViewModel.swift */; };
+		6D5D4B742A5A41F800D76B83 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5D4B732A5A41F800D76B83 /* Resource.swift */; };
+		6D5D4B762A5A511000D76B83 /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5D4B752A5A511000D76B83 /* GalleryViewModel.swift */; };
+		6D5D4B782A5A63A300D76B83 /* CompositionGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5D4B772A5A63A300D76B83 /* CompositionGroupView.swift */; };
+		6D5D4B7E2A5B11E600D76B83 /* CompositionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5D4B7D2A5B11E600D76B83 /* CompositionView.swift */; };
+		6D5D4B802A5B11F600D76B83 /* ColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5D4B7F2A5B11F600D76B83 /* ColorData.swift */; };
+		6DA7FCCE2A5A0D2E00FC094F /* Error Handling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA7FCCD2A5A0D2E00FC094F /* Error Handling.swift */; };
+		6DBAC2A229689926003FCB81 /* CompositionCallBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBAC2A129689926003FCB81 /* CompositionCallBack.swift */; };
+		6DE170D52969CDC600E9C488 /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE170D42969CDC600E9C488 /* CurrentUser.swift */; };
+		6DE170D72969CE6500E9C488 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE170D62969CE6500E9C488 /* Structs.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D3996EF29637789003B9FF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D3996D029637788003B9FF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D3996D729637788003B9FF9;
+			remoteInfo = Demeer;
+		};
+		6D3996F929637789003B9FF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D3996D029637788003B9FF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D3996D729637788003B9FF9;
+			remoteInfo = Demeer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D3996D829637788003B9FF9 /* Demeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D3996DB29637788003B9FF9 /* DemeerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemeerApp.swift; sourceTree = "<group>"; };
+		6D3996DF29637789003B9FF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D3996E229637789003B9FF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6D3996E429637789003B9FF9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		6D3996E729637789003B9FF9 /* Demeer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Demeer.xcdatamodel; sourceTree = "<group>"; };
+		6D3996EE29637789003B9FF9 /* DemeerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemeerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D3996F229637789003B9FF9 /* DemeerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemeerTests.swift; sourceTree = "<group>"; };
+		6D3996F829637789003B9FF9 /* DemeerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemeerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D3996FC29637789003B9FF9 /* DemeerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemeerUITests.swift; sourceTree = "<group>"; };
+		6D3996FE29637789003B9FF9 /* DemeerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemeerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6D39972129637A3E003B9FF9 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		6D39972229637A3E003B9FF9 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		6D39972329637A3E003B9FF9 /* PostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		6D39972429637A3E003B9FF9 /* GalleryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		6D39972529637A3E003B9FF9 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		6D39972629637A3E003B9FF9 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		6D39972A29637A3E003B9FF9 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		6D5D4B712A5A419B00D76B83 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		6D5D4B732A5A41F800D76B83 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		6D5D4B752A5A511000D76B83 /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
+		6D5D4B772A5A63A300D76B83 /* CompositionGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionGroupView.swift; sourceTree = "<group>"; };
+		6D5D4B7D2A5B11E600D76B83 /* CompositionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositionView.swift; sourceTree = "<group>"; };
+		6D5D4B7F2A5B11F600D76B83 /* ColorData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorData.swift; sourceTree = "<group>"; };
+		6DA7FCCD2A5A0D2E00FC094F /* Error Handling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error Handling.swift"; sourceTree = "<group>"; };
+		6DBA1A3329650FAA0005CD26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6DBAC2A129689926003FCB81 /* CompositionCallBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionCallBack.swift; sourceTree = "<group>"; };
+		6DE170D42969CDC600E9C488 /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
+		6DE170D62969CE6500E9C488 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D3996D529637788003B9FF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D3996EB29637789003B9FF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D3996F529637789003B9FF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D3996CF29637788003B9FF9 = {
+			isa = PBXGroup;
+			children = (
+				6D3996DA29637788003B9FF9 /* Demeer */,
+				6D3996F129637789003B9FF9 /* DemeerTests */,
+				6D3996FB29637789003B9FF9 /* DemeerUITests */,
+				6D3996D929637788003B9FF9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D3996D929637788003B9FF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D3996D829637788003B9FF9 /* Demeer.app */,
+				6D3996EE29637789003B9FF9 /* DemeerTests.xctest */,
+				6D3996F829637789003B9FF9 /* DemeerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D3996DA29637788003B9FF9 /* Demeer */ = {
+			isa = PBXGroup;
+			children = (
+				6D5D4B7F2A5B11F600D76B83 /* ColorData.swift */,
+				6D5D4B702A5A411900D76B83 /* Models */,
+				6D5D4B6E2A5A3DF700D76B83 /* Networking */,
+				6D5D4B6C2A5A3DA500D76B83 /* Views */,
+				6DBA1A3329650FAA0005CD26 /* Info.plist */,
+				6D3996DB29637788003B9FF9 /* DemeerApp.swift */,
+				6D3996DF29637789003B9FF9 /* Assets.xcassets */,
+				6D3996E429637789003B9FF9 /* Persistence.swift */,
+				6D3996E629637789003B9FF9 /* Demeer.xcdatamodeld */,
+				6D3996E129637789003B9FF9 /* Preview Content */,
+				6DA7FCCD2A5A0D2E00FC094F /* Error Handling.swift */,
+			);
+			path = Demeer;
+			sourceTree = "<group>";
+		};
+		6D3996E129637789003B9FF9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6D3996E229637789003B9FF9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6D3996F129637789003B9FF9 /* DemeerTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D3996F229637789003B9FF9 /* DemeerTests.swift */,
+			);
+			path = DemeerTests;
+			sourceTree = "<group>";
+		};
+		6D3996FB29637789003B9FF9 /* DemeerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6D3996FC29637789003B9FF9 /* DemeerUITests.swift */,
+				6D3996FE29637789003B9FF9 /* DemeerUITestsLaunchTests.swift */,
+			);
+			path = DemeerUITests;
+			sourceTree = "<group>";
+		};
+		6D5D4B6C2A5A3DA500D76B83 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6D39972429637A3E003B9FF9 /* GalleryView.swift */,
+				6D39972529637A3E003B9FF9 /* LoginView.swift */,
+				6D39972329637A3E003B9FF9 /* PostView.swift */,
+				6D39972629637A3E003B9FF9 /* ProfileView.swift */,
+				6D39972129637A3E003B9FF9 /* SearchView.swift */,
+				6D39972229637A3E003B9FF9 /* SettingsView.swift */,
+				6D5D4B6D2A5A3DCC00D76B83 /* Supporting Views */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6D5D4B6D2A5A3DCC00D76B83 /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				6D5D4B7D2A5B11E600D76B83 /* CompositionView.swift */,
+				6D5D4B772A5A63A300D76B83 /* CompositionGroupView.swift */,
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+		6D5D4B6E2A5A3DF700D76B83 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6D39972A29637A3E003B9FF9 /* Network.swift */,
+				6D5D4B732A5A41F800D76B83 /* Resource.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6D5D4B702A5A411900D76B83 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6D5D4B712A5A419B00D76B83 /* LoginViewModel.swift */,
+				6D5D4B752A5A511000D76B83 /* GalleryViewModel.swift */,
+				6DE170D62969CE6500E9C488 /* Structs.swift */,
+				6DBAC2A129689926003FCB81 /* CompositionCallBack.swift */,
+				6DE170D42969CDC600E9C488 /* CurrentUser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D3996D729637788003B9FF9 /* Demeer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D39970229637789003B9FF9 /* Build configuration list for PBXNativeTarget "Demeer" */;
+			buildPhases = (
+				6D3996D429637788003B9FF9 /* Sources */,
+				6D3996D529637788003B9FF9 /* Frameworks */,
+				6D3996D629637788003B9FF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demeer;
+			productName = Demeer;
+			productReference = 6D3996D829637788003B9FF9 /* Demeer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D3996ED29637789003B9FF9 /* DemeerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D39970529637789003B9FF9 /* Build configuration list for PBXNativeTarget "DemeerTests" */;
+			buildPhases = (
+				6D3996EA29637789003B9FF9 /* Sources */,
+				6D3996EB29637789003B9FF9 /* Frameworks */,
+				6D3996EC29637789003B9FF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D3996F029637789003B9FF9 /* PBXTargetDependency */,
+			);
+			name = DemeerTests;
+			productName = DemeerTests;
+			productReference = 6D3996EE29637789003B9FF9 /* DemeerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6D3996F729637789003B9FF9 /* DemeerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D39970829637789003B9FF9 /* Build configuration list for PBXNativeTarget "DemeerUITests" */;
+			buildPhases = (
+				6D3996F429637789003B9FF9 /* Sources */,
+				6D3996F529637789003B9FF9 /* Frameworks */,
+				6D3996F629637789003B9FF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D3996FA29637789003B9FF9 /* PBXTargetDependency */,
+			);
+			name = DemeerUITests;
+			productName = DemeerUITests;
+			productReference = 6D3996F829637789003B9FF9 /* DemeerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D3996D029637788003B9FF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					6D3996D729637788003B9FF9 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					6D3996ED29637789003B9FF9 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 6D3996D729637788003B9FF9;
+					};
+					6D3996F729637789003B9FF9 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 6D3996D729637788003B9FF9;
+					};
+				};
+			};
+			buildConfigurationList = 6D3996D329637788003B9FF9 /* Build configuration list for PBXProject "Demeer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D3996CF29637788003B9FF9;
+			productRefGroup = 6D3996D929637788003B9FF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D3996D729637788003B9FF9 /* Demeer */,
+				6D3996ED29637789003B9FF9 /* DemeerTests */,
+				6D3996F729637789003B9FF9 /* DemeerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D3996D629637788003B9FF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D3996E329637789003B9FF9 /* Preview Assets.xcassets in Resources */,
+				6D3996E029637789003B9FF9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D3996EC29637789003B9FF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D3996F629637789003B9FF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D3996D429637788003B9FF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D5D4B762A5A511000D76B83 /* GalleryViewModel.swift in Sources */,
+				6DBAC2A229689926003FCB81 /* CompositionCallBack.swift in Sources */,
+				6D39972E29637A3E003B9FF9 /* GalleryView.swift in Sources */,
+				6D39973029637A3E003B9FF9 /* ProfileView.swift in Sources */,
+				6DE170D72969CE6500E9C488 /* Structs.swift in Sources */,
+				6DA7FCCE2A5A0D2E00FC094F /* Error Handling.swift in Sources */,
+				6D39973429637A3E003B9FF9 /* Network.swift in Sources */,
+				6D5D4B802A5B11F600D76B83 /* ColorData.swift in Sources */,
+				6D5D4B7E2A5B11E600D76B83 /* CompositionView.swift in Sources */,
+				6D39972C29637A3E003B9FF9 /* SettingsView.swift in Sources */,
+				6D5D4B722A5A419B00D76B83 /* LoginViewModel.swift in Sources */,
+				6D39972B29637A3E003B9FF9 /* SearchView.swift in Sources */,
+				6D3996E529637789003B9FF9 /* Persistence.swift in Sources */,
+				6DE170D52969CDC600E9C488 /* CurrentUser.swift in Sources */,
+				6D5D4B742A5A41F800D76B83 /* Resource.swift in Sources */,
+				6D3996E829637789003B9FF9 /* Demeer.xcdatamodeld in Sources */,
+				6D39972D29637A3E003B9FF9 /* PostView.swift in Sources */,
+				6D39972F29637A3E003B9FF9 /* LoginView.swift in Sources */,
+				6D5D4B782A5A63A300D76B83 /* CompositionGroupView.swift in Sources */,
+				6D3996DC29637788003B9FF9 /* DemeerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D3996EA29637789003B9FF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D3996F329637789003B9FF9 /* DemeerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D3996F429637789003B9FF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D3996FF29637789003B9FF9 /* DemeerUITestsLaunchTests.swift in Sources */,
+				6D3996FD29637789003B9FF9 /* DemeerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D3996F029637789003B9FF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D3996D729637788003B9FF9 /* Demeer */;
+			targetProxy = 6D3996EF29637789003B9FF9 /* PBXContainerItemProxy */;
+		};
+		6D3996FA29637789003B9FF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D3996D729637788003B9FF9 /* Demeer */;
+			targetProxy = 6D3996F929637789003B9FF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6D39970029637789003B9FF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6D39970129637789003B9FF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D39970329637789003B9FF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Demeer/Preview Content\"";
+				DEVELOPMENT_TEAM = 225WY9GR2W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Demeer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Demeer;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Used to access upload a new composition.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grex.demeer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D39970429637789003B9FF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Demeer/Preview Content\"";
+				DEVELOPMENT_TEAM = 225WY9GR2W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Demeer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Demeer;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Used to access upload a new composition.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grex.demeer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6D39970629637789003B9FF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 225WY9GR2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grex.DemeerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demeer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Demeer";
+			};
+			name = Debug;
+		};
+		6D39970729637789003B9FF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 225WY9GR2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grex.DemeerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demeer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Demeer";
+			};
+			name = Release;
+		};
+		6D39970929637789003B9FF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 225WY9GR2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grex.DemeerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Demeer;
+			};
+			name = Debug;
+		};
+		6D39970A29637789003B9FF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 225WY9GR2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grex.DemeerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Demeer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D3996D329637788003B9FF9 /* Build configuration list for PBXProject "Demeer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D39970029637789003B9FF9 /* Debug */,
+				6D39970129637789003B9FF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D39970229637789003B9FF9 /* Build configuration list for PBXNativeTarget "Demeer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D39970329637789003B9FF9 /* Debug */,
+				6D39970429637789003B9FF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D39970529637789003B9FF9 /* Build configuration list for PBXNativeTarget "DemeerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D39970629637789003B9FF9 /* Debug */,
+				6D39970729637789003B9FF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D39970829637789003B9FF9 /* Build configuration list for PBXNativeTarget "DemeerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D39970929637789003B9FF9 /* Debug */,
+				6D39970A29637789003B9FF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6D3996E629637789003B9FF9 /* Demeer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6D3996E729637789003B9FF9 /* Demeer.xcdatamodel */,
+			);
+			currentVersion = 6D3996E729637789003B9FF9 /* Demeer.xcdatamodel */;
+			path = Demeer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6D3996D029637788003B9FF9 /* Project object */;
+}
